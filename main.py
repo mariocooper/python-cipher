@@ -8,5 +8,5 @@ for char in text.lower():
         encrypted_text += char
     else:
         index = alphabet.find(char)
-        new_index = index + shift
+        new_index = (index + shift) % 26
         encrypted_text += alphabet[new_index]
