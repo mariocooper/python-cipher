@@ -11,3 +11,5 @@ def caesar():
             index = alphabet.find(char)
             new_index = (index + shift) % len(alphabet)
             encrypted_text += alphabet[new_index]
+
+caesar()
