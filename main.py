@@ -17,3 +17,5 @@ def vigenere(message, key):
             encrypted_text += alphabet[new_index]
             offset = alphabet.index(key_char)
     return encrypted_text
+
+encryption = vigenere(text, custom_key)
