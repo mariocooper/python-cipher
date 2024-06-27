@@ -19,3 +19,4 @@ def vigenere(message, key, direction):
     return encrypted_text
 
 encryption = vigenere(text, custom_key, 1)
+decryption = vigenere(encryption, custom_key, -1)
