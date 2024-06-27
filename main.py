@@ -18,4 +18,4 @@ def vigenere(message, key, direction):
             offset = alphabet.index(key_char)
     return encrypted_text
 
-encryption = vigenere(text, custom_key)
+encryption = vigenere(text, custom_key, 1)
