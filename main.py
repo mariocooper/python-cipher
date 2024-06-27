@@ -19,5 +19,11 @@ def vigenere(message, key, direction=1):
 
     return final_message
 
-encryption = vigenere(text, custom_key)
-decryption = vigenere(encryption, custom_key, -1)
+def encrypt(message, key):
+    return vigenere(message, key)
+    
+def decrypt(message, key):
+    return vigenere(message, key, -1)
+    
+encryption = encrypt(text, custom_key)
+decryption = decrypt(encryption, custom_key)
